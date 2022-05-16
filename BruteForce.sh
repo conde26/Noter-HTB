@@ -18,7 +18,6 @@ trap ctrl_c INT
 function ctrl_c(){
 
 	echo -e "\n${yellowColour}[*]${endColour}${grayColour} Exiting...${endColour}"; sleep 1
-	rm $tmp_file 2>/dev/null
 	tput cnorm; exit 1
 }
 
