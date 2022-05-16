@@ -1,6 +1,6 @@
-# Scripts Máquina Noter HTB 
+# Noter - HTB 
 
-En este repositorio, podemos encontrar trest scripts en Bash, PowerShell y python3, de forma que podemos encontrar usuarios potenciales para conectarnos. 
+En este repositorio, podemos encontrar tres scripts en Bash, PowerShell y python3, de forma que podemos encontrar usuarios potenciales para conectarnos. 
 
 ### Ejecución de script de Bash 
 Le pasamos por parametro un dicionario de usuarios.
