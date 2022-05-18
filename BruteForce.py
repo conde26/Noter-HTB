@@ -21,5 +21,5 @@ for line in file:
         a = "User[✔]: " + user + "\n"
         file1.write(a)
         file1.close()
-    print(f"\t[✔] User found: {user}")
+        print(f"\t[✔] User found: {user}")
 file.close()
