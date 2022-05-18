@@ -16,7 +16,6 @@ grayColour="\e[0;37m\033[1m"
 trap ctrl_c INT
 
 function ctrl_c(){
-
 	echo -e "\n${yellowColour}[*]${endColour}${grayColour} Exiting...${endColour}"; sleep 1
 	tput cnorm; exit 1
 }
