@@ -22,7 +22,7 @@ gc $w | % {
         $estado=$(curl -s $url --data "username=$_&password=test" | Select-String -pattern "Invalid login")
 
         if ($estado){
-                write-host -Foreground green "`t[✔] User found: $_"
+                write-host -nonewline -Foreground green "`t[✔] User found: "; write-host -Foreground yellow $_
                 $_ | out-file $result
         }
 }
